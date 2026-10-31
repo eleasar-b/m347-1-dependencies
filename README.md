@@ -6,13 +6,13 @@
  
 ```powershell
 wsl --install -d Ubuntu-24.04 # falls noch nicht vorhanden
-mkdir C:\wsl, C:\demo
+mkdir C:\wsl
 wsl --export Ubuntu-24.04 C:\wsl\ubuntu.tar
 wsl --import m347-1-demo-a C:\wsl\m347-1-demo-a C:\wsl\ubuntu.tar
 wsl --import m347-1-demo-b C:\wsl\m347-1-demo-b C:\wsl\ubuntu.tar
+
+git clone https://github.com/eleasar-b/m347-1-dependencies.git C:\Development
 ```
- 
-`app_a.py` und `app_b.py` nach `C:\demo` kopieren.
  
 ## Vorbereitung in beiden Distros
  
@@ -28,7 +28,7 @@ python3 -c "import pydantic" # Schlägt mit `ModuleNotFoundError` fehl
  
 ## Ablauf
  
-In beiden Terminals: `cd /mnt/c/demo`
+In beiden Terminals: `cd /mnt/c/Development/m347-1-dependencies`
  
 | # | Distro | Befehl | Ergebnis |
 | --- | --- | --- | --- |
