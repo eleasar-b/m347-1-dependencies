@@ -34,9 +34,9 @@ In beiden Terminals: `cd /mnt/c/Development/m347-1-dependencies`
 | --- | --- | --- | --- |
 | 1 | demo-a | `python3 app_a.py` | `ModuleNotFoundError: No module named 'pydantic'` |
 | 2 | demo-a | `pip install pydantic==1.10.27` | installiert |
-| 3 | demo-a | `python3 app_a.py` | `{'gruss': 'Hallo von App A'}` |
+| 3 | demo-a | `python3 app_a.py` | `{'message': 'Hello from app a!'}` |
 | 4 | demo-b | `pip install pydantic==2.14.2` | installiert |
-| 5 | demo-b | `python3 app_b.py` | `{'gruss': 'Hallo von App B'}` |
+| 5 | demo-b | `python3 app_b.py` | `{'message': 'Hello from app b!'}` |
 | 6 | demo-b | `python3 app_a.py` | `PydanticImportError: BaseSettings has been moved to the pydantic-settings package` |
 | 7 | demo-a | `python3 app_b.py` | `AttributeError: 'Cfg' object has no attribute 'model_dump'` |
  
